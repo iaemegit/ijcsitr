@@ -1,0 +1,38 @@
+.research-template .about-aim-scope > h3 {
+  margin: 30px 0 14px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--jt-dark);
+}
+.about-aim-details > div {
+  margin: 0 0 24px;
+}
+.about-aim-details h4 {
+  margin: 0 0 8px;
+  color: var(--jt-dark);
+  font-size: 17px;
+  font-weight: 600;
+}
+.about-aim-details p {
+  margin: 0;
+}
+.about-scope-details > div {
+  margin: 0 0 20px;
+}
+.about-scope-details dt,
+.about-scope-details dd {
+  display: inline;
+  font-size: 15px;
+  line-height: 1.85;
+}
+.about-scope-details dt {
+  font-weight: 600;
+  color: var(--jt-dark);
+}
+.about-scope-details dt::after {
+  content: ": ";
+}
+.about-scope-details dd {
+  margin: 0;
+  color: #555f69;
+}

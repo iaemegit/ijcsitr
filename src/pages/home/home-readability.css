@@ -1,0 +1,163 @@
+.research-template.homepage-template {
+  font-size: 16px;
+}
+.homepage-template .jt-utility {
+  font-size: 13px;
+  padding-block: 7px;
+}
+.research-template.homepage-template .jt-identity {
+  padding-block: 18px;
+}
+.research-template.homepage-template .jt-identity .jt-journal-title {
+  font-size: 28px;
+  line-height: 1.35;
+}
+.research-template.homepage-template .jt-identity-aside {
+  font-size: 14px;
+}
+.research-template.homepage-template .jt-header-search .form-control {
+  font-size: 15px;
+}
+.homepage-template #home .jt-intro-crumb {
+  margin-bottom: 12px;
+}
+.homepage-template #home .breadcrumb {
+  font-size: 14px;
+}
+.research-template.homepage-template #home .jt-masthead h1 {
+  font-size: clamp(28px, 3vw, 36px);
+  margin-block: 6px 12px;
+}
+.research-template.homepage-template #home .jt-masthead p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.research-template.homepage-template #home .jt-masthead .jt-chips {
+  margin-block: 14px;
+}
+.research-template.homepage-template #home .jt-masthead .jt-chips span,
+.research-template.homepage-template #home .jt-kicker {
+  font-size: 13px;
+}
+.research-template.homepage-template
+  #home
+  :is(
+    .jt-primary-btn,
+    .jt-outline-btn,
+    .jt-text-link,
+    .rt-action-link,
+    .rt-learn-more
+  ) {
+  font-size: 15px;
+}
+.research-template.homepage-template
+  #home
+  :is(
+    .rt-feature h2,
+    .rt-about-intro h2,
+    .rt-why-choose h2,
+    .jt-section-head h2,
+    .jt-author-call h2
+  ) {
+  font-size: clamp(25px, 2.4vw, 30px);
+  line-height: 1.35;
+}
+.research-template.homepage-template
+  #home
+  :is(
+    .rt-about-intro p,
+    .rt-resource-card p,
+    .rt-publishing-card p,
+    .rt-benefit,
+    .rt-about-platforms,
+    .jt-section p,
+    .jt-feature-list,
+    .jt-author-call p
+  ) {
+  font-size: 16px;
+  line-height: 1.7;
+}
+.research-template.homepage-template
+  #home
+  .rt-about-intro
+  .rt-about-intro-lead {
+  font-size: 17px;
+}
+.research-template.homepage-template
+  #home
+  :is(.rt-resource-card h3, .rt-publishing-card h3, .rt-about-intro h3) {
+  font-size: 21px;
+}
+.homepage-template #home :is(.rt-resource-card > span, .jt-step > span) {
+  font-size: 14px;
+}
+.research-template.homepage-template
+  #home
+  :is(
+    .jt-side-fact,
+    .jt-side-links a,
+    .jt-submitbox small,
+    .jt-side-section p,
+    .jt-contact p,
+    .jt-contact a,
+    .home-contact-card p,
+    .jt-step p
+  ) {
+  font-size: 14px;
+  line-height: 1.65;
+}
+.research-template.homepage-template #home .home-policy-card > span {
+  font-size: 16px;
+}
+.homepage-template #home .jt-subnav a {
+  font-size: 14px;
+  padding-block: 12px;
+}
+.research-template.homepage-template
+  #home
+  :is(.rt-about-intro, .rt-why-choose) {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.research-template.homepage-template #home .rt-discovery {
+  padding-block: 24px;
+}
+.research-template.homepage-template #home .rt-resource-grid {
+  margin-top: 20px;
+}
+.research-template.homepage-template #home > .jt-content {
+  padding-top: 20px;
+}
+.research-template.homepage-template .jt-footer {
+  padding-block: 30px 20px;
+}
+.research-template.homepage-template
+  .jt-footer
+  :is(p, a, small, .jt-footer-bottom) {
+  font-size: 14px;
+  line-height: 1.65;
+}
+.research-template.homepage-template .jt-footer .jt-brand strong {
+  font-size: 28px;
+}
+.research-template.homepage-template .jt-footline {
+  font-size: 13px;
+  margin-top: 20px;
+  padding-top: 14px;
+}
+.research-template.homepage-template #home .jt-step h3,
+.research-template.homepage-template .jt-footer h3 {
+  font-size: 17px;
+}
+@media (max-width: 600px) {
+  .research-template.homepage-template .jt-identity .jt-journal-title {
+    font-size: 23px;
+  }
+  .research-template.homepage-template .jt-utility span {
+    font-size: 12px;
+  }
+  .research-template.homepage-template .jt-header-search .form-control {
+    font-size: 16px;
+  }
+}

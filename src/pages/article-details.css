@@ -1,0 +1,190 @@
+.research-template .jt-inner-page .article-page {
+  padding-block: 20px 28px;
+  color: #263e55;
+}
+.research-template .article-page .jt-intro-crumb {
+  margin-bottom: 10px;
+}
+.research-template .article-page .breadcrumb {
+  font-size: 14px;
+}
+.research-template .article-page .back-link {
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #0755a5;
+}
+.article-page .article-detail-grid {
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 32px;
+  align-items: start;
+}
+.article-page .article-detail-grid > article {
+  min-width: 0;
+}
+.article-page .detail-kicker {
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #45627d;
+}
+.article-page .detail-kicker .article-type {
+  font-size: 12px;
+  font-weight: 750;
+  color: #0755a5;
+}
+.research-template .article-page .article-detail-grid h1 {
+  font-size: clamp(27px, 2.8vw, 36px);
+  line-height: 1.35;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  color: #10365d;
+  margin: 0 0 16px;
+  overflow-wrap: anywhere;
+}
+.article-page .detail-authors {
+  margin: 16px 0;
+  gap: 12px 22px;
+}
+.article-page .detail-authors > div {
+  gap: 4px;
+}
+.article-page .detail-authors strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0755a5;
+}
+.article-page .detail-authors span {
+  font-size: 14px;
+  color: #45627d;
+}
+.article-page .detail-meta {
+  padding-block: 12px;
+  font-size: 14px;
+  gap: 8px 20px;
+  color: #334f69;
+  border-color: #ccddeb;
+}
+.article-page .detail-meta a {
+  color: #0755a5;
+  font-weight: 700;
+}
+.article-page :is(.abstract, .keywords, .references) {
+  margin-top: 22px;
+}
+.article-page :is(.keywords, .references) {
+  padding-top: 18px;
+  border-color: #ccddeb;
+}
+.research-template
+  .article-page
+  :is(.abstract h2, .references h2, .related h2) {
+  color: #10365d;
+  font-size: 25px;
+  font-weight: 750;
+  margin-bottom: 12px;
+}
+.article-page :is(.abstract p, .references p) {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #304a63;
+  margin-bottom: 0;
+}
+.research-template .article-page .keywords h3 {
+  font-size: 16px;
+  font-weight: 750;
+  color: #10365d;
+  margin-bottom: 12px;
+}
+.article-page .keywords a {
+  background: #eaf3ff;
+  color: #0755a5;
+  border-color: #bbd5f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.article-page .keywords a:hover {
+  background: #dbeaff;
+  border-color: #0755a5;
+}
+.article-page .article-sidebar {
+  padding-top: 0;
+}
+.article-page .detail-action-panel {
+  background: #edf4fc;
+  border: 1px solid #c7dbee;
+  border-top: 4px solid #0755a5;
+  border-radius: 10px;
+  padding: 20px;
+}
+.article-page .detail-action-panel > .eyebrow {
+  font-size: 12px;
+  color: #0755a5;
+  font-weight: 750;
+}
+.research-template .article-page .detail-action-panel h3 {
+  font-size: 20px;
+  font-weight: 750;
+  color: #10365d;
+  margin: 10px 0 16px;
+}
+.research-template .article-page .detail-action-panel .button {
+  background: #0755a5;
+  border-color: #0755a5;
+  color: #fff;
+  min-height: 44px;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.research-template .article-page .detail-action-panel .button.outline {
+  background: #fff;
+  color: #0755a5;
+}
+.research-template .article-page .detail-action-panel .button:hover {
+  background: #10365d;
+  color: #fff;
+}
+.article-page :is(.save-detail, .file-note, .sidebar-footnote) {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #45627d;
+}
+.article-page .save-detail {
+  margin-block: 14px;
+}
+.article-page .article-metrics {
+  padding-top: 14px;
+  border-color: #c7dbee;
+}
+.article-page .article-metrics b {
+  font-size: 26px;
+  font-weight: 750;
+  color: #0755a5;
+}
+.article-page .article-metrics span {
+  font-size: 13px;
+  color: #45627d;
+}
+.article-page .sidebar-footnote {
+  padding: 12px 4px 0;
+}
+.research-template .article-page .related {
+  padding-block: 26px 0;
+  margin-top: 24px;
+}
+@media (max-width: 991px) {
+  .article-page .article-detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .article-page .article-sidebar {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .article-page :is(.abstract p, .references p) {
+    font-size: 16px;
+  }
+}

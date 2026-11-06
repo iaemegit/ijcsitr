@@ -1,0 +1,59 @@
+.admin-discipline-form {
+  max-width: 760px;
+  border: 1px solid #dfe7d5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.discipline-form-body {
+  padding: 28px 30px;
+}
+.admin-discipline-form .form-label {
+  display: block;
+  font-size: 12px;
+  color: #688550;
+  margin: 23px 0 11px;
+}
+.admin-discipline-form .form-label:first-child {
+  margin-top: 0;
+}
+.admin-discipline-form .form-control,
+.admin-discipline-form .form-select {
+  font-size: 13px;
+  min-height: 45px;
+  padding: 11px 13px;
+  border-color: #dce7d1;
+  border-radius: 3px;
+}
+.admin-discipline-form .form-control.is-invalid {
+  border-color: #dc3545;
+}
+.admin-discipline-form .invalid-feedback {
+  font-size: 11px;
+}
+.discipline-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 20px 30px;
+  background: #fbfcf8;
+  border-top: 1px solid #e7eddf;
+}
+.discipline-form-actions .btn {
+  gap: 9px;
+  font-size: 12px;
+  min-height: 43px;
+}
+@media (max-width: 700px) {
+  .discipline-form-body {
+    padding: 23px 20px;
+  }
+  .discipline-form-actions {
+    padding: 18px 20px;
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+  .discipline-form-actions .btn {
+    font-size: 11px;
+    padding: 11px 14px;
+  }
+}

@@ -1,0 +1,137 @@
+.issue-form {
+  max-width: 1100px;
+  overflow: hidden;
+}
+.issue-add-form {
+  max-width: none;
+  background: #fff;
+  border-color: #e1e5ed;
+}
+.issue-add-body {
+  padding: 24px;
+}
+.issue-form.issue-add-form .form-label {
+  color: #009ba3;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.issue-form.issue-add-form .form-control,
+.issue-form.issue-add-form .form-select {
+  border-color: #bac4ff;
+  border-radius: 7px;
+  min-height: 40px;
+  box-shadow: 0 2px 3px #17284612;
+}
+.issue-add-form .issue-form-actions {
+  border-top: 0;
+  padding: 22px 24px;
+  background: white;
+}
+.issue-add-form .issue-add-button,
+.issue-add-form .issue-cancel-button {
+  border-radius: 24px;
+  padding: 8px 24px;
+  color: white;
+  font-size: 14px;
+}
+.issue-add-button {
+  background: #00c9b5;
+}
+.issue-cancel-button {
+  background: #98a1af;
+}
+.issue-upload-hint {
+  display: block;
+  font-size: 11px;
+  color: #7a8797;
+  margin-top: 5px;
+}
+.issue-form .form-label {
+  font-size: 13px;
+  color: #087f8c;
+}
+.issue-form .form-label .text-danger {
+  display: inline;
+}
+.issue-form .form-control,
+.issue-form .form-select {
+  min-height: 44px;
+  font-size: 14px;
+  border-color: #c6cedc;
+}
+.issue-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 20px 24px;
+  border-top: 1px solid #e5e9ed;
+}
+.issue-data-table {
+  min-width: 1650px;
+}
+.journal-issues-card .issue-data-table > :not(caption) > * > * {
+  padding: 13px 14px;
+  white-space: nowrap;
+  color: #23476c;
+  border-color: #dfe5ed;
+  font-size: 12px;
+}
+.journal-issues-card .issue-data-table thead th {
+  background: #f3f4f6;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.issue-checkbox {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+  border-color: #8d969e;
+}
+.issue-checkbox:checked {
+  background-color: #00bfae;
+  border-color: #00bfae;
+}
+.issue-data-table .issue-selected > td {
+  background: #ecfbf8;
+}
+.issue-selection-count {
+  padding: 8px 20px;
+  font-size: 12px;
+  color: #23476c;
+  background: #f0fdfa;
+}
+.issue-audit-date {
+  min-width: 195px;
+}
+.issue-table-footer {
+  background: #f0fdfa;
+  color: #23476c;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.issue-table-footer > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.issue-table-footer .issue-page-button {
+  border: 1px solid #c7d2fe;
+  border-radius: 24px;
+  padding: 8px 16px;
+  color: #23476c;
+  background: #fff;
+  font-size: 12px;
+}
+.issue-table-footer .issue-current-page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #00c9b5;
+  color: #fff;
+  font-size: 13px;
+}

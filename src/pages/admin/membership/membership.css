@@ -1,0 +1,81 @@
+.membership-form-body {
+  padding: 28px;
+}
+.membership-form-body h2 {
+  font-size: 20px;
+  color: #563bff;
+  margin-bottom: 28px;
+}
+.membership-form .form-label {
+  color: #087f8c;
+  font-size: 13px;
+}
+.membership-form .form-control,
+.membership-form .form-select {
+  min-height: 42px;
+  border-color: #c3c8ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 3px #24396814;
+}
+.membership-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 14px 28px 22px;
+}
+.membership-form-actions .button {
+  border-radius: 999px;
+  min-width: 80px;
+}
+.membership-form-actions .button:not(.outline) {
+  background: #00c7b1;
+  border-color: #00c7b1;
+  color: white;
+}
+.membership-form-actions .button.outline {
+  background: #969eac;
+  border-color: #969eac;
+  color: white;
+}
+.membership-photo-preview {
+  display: block;
+  max-width: 160px;
+  max-height: 160px;
+  object-fit: contain;
+  margin-top: 12px;
+}
+.membership-photo-hint {
+  display: block;
+  color: #7b8796;
+  font-size: 11px;
+  margin-top: 6px;
+}
+.membership-table {
+  min-width: 1150px;
+}
+.membership-table td:nth-child(3) {
+  min-width: 200px;
+  max-width: 320px;
+  overflow-wrap: anywhere;
+}
+.membership-toolbar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.membership-toolbar .form-control {
+  max-width: 450px;
+}
+.membership-toolbar .form-select {
+  max-width: 160px;
+}
+@media (max-width: 700px) {
+  .membership-form-body {
+    padding: 20px;
+  }
+  .membership-toolbar .form-control,
+  .membership-toolbar .form-select {
+    max-width: 100%;
+  }
+}

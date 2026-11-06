@@ -1,0 +1,120 @@
+.research-template .jt-inner-page .compact-info-page .page-intro {
+  padding-block: 14px;
+}
+.research-template .jt-inner-page .compact-info-page .page-intro h1 {
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 750;
+  margin-block: 6px 10px;
+}
+.research-template .jt-inner-page .compact-info-page :is(.jt-content, .section) {
+  padding-block: 24px;
+}
+.research-template .compact-info-page .jt-section {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+}
+.research-template .compact-info-page .jt-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.research-template .compact-info-page .jt-section-head {
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+.research-template .compact-info-page :is(.jt-section-head h2, .prose h2, .form-panel h2) {
+  font-size: 25px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+.research-template .compact-info-page :is(.jt-section p, .prose p, .form-panel p, .apc-services, .impact-factor-definitions dd) {
+  font-size: 16px;
+  line-height: 1.7;
+}
+.research-template .compact-info-page :is(.jt-section h3, .jt-sidebar h3) {
+  font-size: 20px;
+  font-weight: 700;
+}
+.research-template .compact-info-page :is(.form-label, .form-check-label) {
+  font-size: 14px;
+  font-weight: 650;
+  color: #173b60;
+}
+.research-template .compact-info-page :is(.form-control, .form-select) {
+  min-height: 44px;
+  font-size: 15px;
+}
+.research-template .compact-info-page :is(.button, .jt-primary-btn, .jt-outline-btn, .jt-text-link, .text-link) {
+  font-size: 15px;
+  font-weight: 650;
+}
+.research-template .compact-info-page :is(.jt-side-fact, .jt-side-links a, .jt-contact p, .jt-contact a, .jt-submitbox small) {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.research-template .compact-info-page .jt-side-section {
+  margin-block: 18px;
+  padding-bottom: 16px;
+}
+.research-template .compact-info-page .jt-submitbox {
+  padding: 18px;
+}
+.research-template .compact-info-page .apc-fees {
+  gap: 16px;
+  margin-block: 18px;
+}
+.research-template .compact-info-page .apc-fees > div {
+  padding: 18px;
+}
+.research-template .compact-info-page .apc-fees span {
+  font-size: 16px;
+  font-weight: 650;
+}
+.research-template .compact-info-page .apc-fees small {
+  font-size: 14px;
+}
+.research-template .compact-info-page .apc-fees strong {
+  font-size: 30px;
+  margin-block: 8px;
+}
+.research-template .compact-info-page .apc-content h3 {
+  margin-block: 20px 12px;
+}
+.research-template .compact-info-page .impact-factor-highlight {
+  padding: 18px 20px;
+  margin-top: 16px;
+}
+.research-template .compact-info-page .impact-factor-highlight strong {
+  font-size: 38px;
+  margin-block: 8px;
+}
+.research-template .compact-info-page .impact-factor-highlight span {
+  font-size: 15px;
+  font-weight: 600;
+}
+.research-template .compact-info-page .impact-factor-table :is(th, td) {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 650;
+}
+.research-template .compact-info-page .impact-factor-table caption {
+  padding: 10px 16px;
+  font-size: 14px;
+}
+.research-template .compact-info-page :is(.join-application, .form-panel) {
+  padding: 22px;
+}
+.research-template .compact-info-page .join-application {
+  margin-top: 20px;
+}
+.research-template .compact-info-page .contact-grid {
+  gap: 28px;
+  align-items: start;
+}
+@media (max-width: 600px) {
+  .research-template .compact-info-page :is(.join-application, .form-panel) {
+    padding: 18px;
+  }
+  .research-template .compact-info-page :is(.form-control, .form-select) {
+    font-size: 16px;
+  }
+}

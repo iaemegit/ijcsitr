@@ -1,0 +1,57 @@
+.admin-login-page {
+  --ink: #173b60;
+  --teal: #173b60;
+  --muted: #65788b;
+  --line: #d9e3ed;
+  --orange: #173b60;
+  background: #fff;
+  color: #173b60;
+}
+.admin-login-page .admin-login-story {
+  background: #173b60;
+  color: #fff;
+}
+.admin-login-page .admin-login-main {
+  background: #fff;
+}
+.admin-login-page .admin-logo,
+.admin-login-page .login-story-copy h1,
+.admin-login-page .login-story-copy h1 em {
+  color: #fff;
+}
+.admin-login-page :is(.admin-logo small, .login-story-copy .eyebrow, .login-story-copy > p, .login-story-badge, .login-story-footer) {
+  color: #d5e3f0;
+}
+.admin-login-page .login-decoration {
+  border-color: #ffffff20;
+  box-shadow: 0 0 0 60px #ffffff08, 0 0 0 120px #ffffff05;
+}
+.admin-login-page .admin-lock-icon {
+  background: #edf3f9;
+  color: #173b60;
+  border-color: #d9e3ed;
+}
+.admin-login-page :is(.admin-login-form h2, .admin-login-form .eyebrow, .form-label, .back-link) {
+  color: #173b60;
+}
+.admin-login-page :is(.admin-login-form > p, .admin-login-note, .login-copyright, .admin-password-field > button) {
+  color: #65788b;
+}
+.admin-login-page .form-control {
+  background: #fff;
+  border-color: #cbd9e6;
+  color: #173b60;
+}
+.admin-login-page .form-control:focus {
+  border-color: #527ca6;
+  box-shadow: 0 0 0 3px #173b601a;
+}
+.admin-login-page .button {
+  background: #173b60;
+  border-color: #173b60;
+  color: #fff;
+}
+.admin-login-page .button:hover {
+  background: #0b2a49;
+  border-color: #0b2a49;
+}

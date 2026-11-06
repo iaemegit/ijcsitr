@@ -1,0 +1,176 @@
+.admin-journal-form {
+  width: 100%;
+  border: 1px solid #dfe7d5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.journal-form-body {
+  padding: 28px 30px;
+}
+.journal-form-body h2 {
+  font-size: 19px;
+  font-weight: 550;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+.journal-form-intro {
+  font-size: 11px;
+  color: #93a181;
+  margin-bottom: 25px;
+}
+.admin-journal-form .form-label {
+  display: block;
+  font-size: 12px;
+  color: #087f8c;
+  margin: 0 0 11px;
+}
+.admin-journal-form .form-control,
+.admin-journal-form .form-select {
+  font-size: 13px;
+  min-height: 45px;
+  padding: 11px 13px;
+  border-color: #b5bdff;
+  border-radius: 3px;
+}
+.admin-journal-form .form-control.is-invalid {
+  border-color: #dc3545;
+}
+.admin-journal-form .invalid-feedback {
+  font-size: 11px;
+}
+.journal-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 20px 30px;
+  background: #fbfcf8;
+  border-top: 1px solid #e7eddf;
+}
+.journal-form-actions .btn {
+  gap: 9px;
+  font-size: 12px;
+  min-height: 43px;
+}
+.journal-key {
+  font-size: 10px;
+  color: #8b9e79;
+  display: block;
+  margin-top: 5px;
+}
+.journal-data-table td:nth-child(2) {
+  min-width: 240px;
+  max-width: 430px;
+}
+.journal-field-hint {
+  font-size: 9px;
+  color: #93a181;
+  display: block;
+  margin-top: 8px;
+}
+.admin-journal-form textarea {
+  line-height: 1.8;
+}
+@media (max-width: 700px) {
+  .journal-form-body {
+    padding: 23px 20px;
+  }
+  .journal-form-actions {
+    padding: 18px 20px;
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+  .journal-form-actions .btn {
+    font-size: 11px;
+    padding: 11px 14px;
+  }
+  .journal-data-table {
+    min-width: 780px;
+  }
+}
+.journal-editor {
+  border: 1px solid #dce1e8;
+  border-radius: 5px;
+  overflow: hidden;
+  background: white;
+}
+.journal-editor:focus-within {
+  border-color: #587bff;
+  box-shadow: 0 0 0 1px #587bff;
+}
+.journal-editor-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 6px 8px;
+  border-bottom: 1px solid #e8edf2;
+  background: #fcfdff;
+}
+.journal-editor-toolbar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 28px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: #405367;
+}
+.journal-editor-toolbar button:hover,
+.journal-editor-toolbar button[aria-pressed="true"] {
+  background: #e6edff;
+  color: #254fd0;
+}
+.journal-editor-toolbar button:disabled {
+  opacity: 0.5;
+}
+.journal-editor .tiptap {
+  min-height: 220px;
+  padding: 14px;
+  outline: 0;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.journal-editor .tiptap p {
+  margin: 0 0 10px;
+}
+.journal-editor-footer {
+  padding: 4px 10px;
+  border-top: 1px solid #edf0f5;
+  text-align: right;
+  font-size: 10px;
+  color: #7c8798;
+}
+.journal-cover-preview {
+  display: block;
+  max-width: 180px;
+  max-height: 240px;
+  object-fit: contain;
+  margin-top: 14px;
+  border: 1px solid #e3e7ef;
+  border-radius: 4px;
+}
+.journal-form-actions {
+  background: white;
+  border-top: 0;
+}
+.journal-form-actions .journal-save,
+.journal-form-actions .journal-cancel {
+  border-radius: 24px;
+  min-height: 36px;
+  padding: 7px 23px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.journal-form-actions .journal-save {
+  background: #00bfae;
+}
+.journal-form-actions .journal-cancel {
+  background: #939caa;
+}
+.admin-journal-form .form-control[type="file"] {
+  max-width: 100%;
+}

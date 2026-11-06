@@ -1,0 +1,74 @@
+.impact-factor-highlight {
+  padding: 25px 28px;
+  margin: 24px 0 0;
+  background: #f3f7fa;
+  border-left: 4px solid #006699;
+}
+.impact-factor-highlight span {
+  display: block;
+  color: #596f81;
+  font-size: 13px;
+}
+.impact-factor-highlight strong {
+  display: block;
+  color: #173b60;
+  font-size: 52px;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+.impact-factor-formula {
+  padding: 20px;
+  background: #f3f7fa;
+  color: #173b60;
+  border: 1px solid #dce5ed;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.impact-factor-definitions > div {
+  margin: 18px 0;
+}
+.impact-factor-definitions dt {
+  color: #173b60;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.impact-factor-definitions dd {
+  color: #555f69;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.impact-factor-table-wrap {
+  border: 1px solid #dce5ed;
+}
+.impact-factor-table thead th {
+  background: #edf3f7;
+  color: #173b60;
+  font-size: 14px;
+  font-weight: 600;
+}
+.impact-factor-table th,
+.impact-factor-table td {
+  padding: 17px 22px;
+  border-color: #e3e9ee;
+}
+.impact-factor-table td {
+  color: #006699;
+  font-weight: 600;
+}
+.impact-factor-table caption {
+  padding: 15px 20px;
+  color: #63798a;
+  font-size: 12px;
+}
+.impact-factor-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  .impact-factor-table th,
+  .impact-factor-table td {
+    padding: 14px;
+  }
+}

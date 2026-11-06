@@ -1,0 +1,49 @@
+.apc-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 30px 0 16px;
+}
+.apc-fees {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 28px 0;
+}
+.apc-fees > div {
+  background: #f4f7fa;
+  border: 1px solid #dce5ed;
+  border-top: 3px solid #006699;
+  padding: 25px;
+}
+.apc-fees span,
+.apc-fees strong,
+.apc-fees small {
+  display: block;
+}
+.apc-fees span {
+  color: #526777;
+  font-size: 14px;
+}
+.apc-fees strong {
+  color: #173b60;
+  font-size: 36px;
+  margin: 14px 0 10px;
+}
+.apc-fees small {
+  color: #63798a;
+  font-size: 12px;
+}
+.apc-services {
+  padding-left: 20px;
+  color: #555f69;
+  line-height: 1.9;
+  font-size: 15px;
+}
+.apc-services li {
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .apc-fees {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

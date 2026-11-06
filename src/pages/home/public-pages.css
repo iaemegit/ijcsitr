@@ -1,0 +1,263 @@
+.journal-template {
+  --ink: #17344e;
+  --teal: #0755a5;
+  --muted: #63798a;
+  --line: #dce5ed;
+  --orange: #0755a5;
+  --cream: #f4f8fc;
+  --paper: #fff;
+  --bs-primary-rgb: 7, 85, 165;
+}
+.journal-template .jt-inner-page main {
+  padding: 0;
+}
+.journal-template .jt-inner-page .page-intro {
+  padding: 34px 0 36px;
+  background: #f4f8fc;
+  border-bottom: 1px solid var(--jt-line);
+}
+.journal-template .jt-inner-page .page-intro .breadcrumbs {
+  display: none;
+}
+.journal-template .jt-inner-page .page-intro h1 {
+  font-size: clamp(28px, 3.3vw, 40px);
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+  font-weight: 800;
+  margin: 10px 0 12px;
+}
+.journal-template .jt-inner-page .orange-dot {
+  display: none;
+}
+.journal-template .jt-inner-page .page-intro p {
+  color: #63798a;
+  margin: 0;
+  font-size: 14px;
+}
+.journal-template .jt-inner-page .eyebrow {
+  color: #0755a5;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.journal-template .jt-inner-page .section {
+  padding-top: 38px;
+  padding-bottom: 62px;
+}
+.journal-template .jt-inner-page .prose h2 {
+  font-size: 23px;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 800;
+}
+.journal-template .jt-inner-page .prose p {
+  font-size: 14px;
+  color: #596f81;
+  line-height: 1.85;
+}
+.journal-template .jt-inner-page .prose > h2 {
+  margin: 14px 0 18px;
+}
+.journal-template .jt-inner-page .button {
+  background: var(--jt-blue);
+  color: white;
+  border: 1px solid var(--jt-blue);
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 18px;
+  text-decoration: none;
+}
+.journal-template .jt-inner-page .button:hover {
+  background: #003c7c;
+  color: white;
+}
+.journal-template .jt-inner-page .button.outline {
+  color: #0755a5;
+  background: #fff;
+}
+.journal-template .jt-inner-page .library-layout {
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 32px;
+}
+.journal-template .jt-inner-page .filters {
+  border: 1px solid var(--jt-line);
+  border-top: 3px solid var(--jt-blue);
+  padding: 22px;
+  background: #f7fafd;
+}
+.journal-template .jt-inner-page .filter-heading h3 {
+  font-size: 13px;
+}
+.journal-template .jt-inner-page .field-label {
+  font-size: 11px;
+  color: #48667e;
+}
+.journal-template .jt-inner-page .filter-note {
+  background: #eaf3fc;
+  color: #0755a5;
+  padding: 16px;
+}
+.journal-template .jt-inner-page .filter-note p {
+  color: #63798a;
+  font-size: 12px;
+}
+.journal-template .jt-inner-page .library-search {
+  border: 1px solid #cbddeb;
+  background: #f4f8fc;
+  box-shadow: none;
+}
+.journal-template .jt-inner-page .library-search input {
+  background: transparent;
+  color: #17344e;
+}
+.journal-template .jt-inner-page .library-search button {
+  background: #0755a5;
+  color: white;
+}
+.journal-template .jt-inner-page .results-toolbar {
+  font-size: 13px;
+  color: #63798a;
+}
+.journal-template .jt-inner-page .results-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
+.journal-template .jt-inner-page .article-card {
+  min-height: 0;
+  border-color: #dce5ed;
+  padding: 22px 24px 0;
+  border-radius: 3px;
+}
+.journal-template .jt-inner-page .article-card:hover {
+  border-color: #91b9df;
+  box-shadow: 0 4px 15px #0755a50a;
+  transform: none;
+}
+.journal-template .jt-inner-page .article-type {
+  font-size: 10px;
+  color: #0755a5;
+  font-weight: 700;
+}
+.journal-template .jt-inner-page .article-type > span {
+  background: #0755a5;
+}
+.journal-template .jt-inner-page .article-meta {
+  font-size: 11px;
+  color: #71879b;
+}
+.journal-template .jt-inner-page .article-title h3 {
+  font-size: 19px;
+  line-height: 1.5;
+  color: #17344e;
+}
+.journal-template .jt-inner-page .article-authors {
+  font-size: 13px;
+  color: #48667e;
+}
+.journal-template .jt-inner-page .article-excerpt {
+  font-size: 13px;
+  color: #63798a;
+}
+.journal-template .jt-inner-page .card-bottom {
+  border-color: var(--jt-line);
+}
+.journal-template .jt-inner-page .card-bottom > span,
+.journal-template .jt-inner-page .card-bottom > a {
+  font-size: 12px;
+}
+.journal-template .jt-inner-page .page-button.active {
+  background: #0755a5;
+  color: white;
+}
+.journal-template .jt-inner-page .contact-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 48px;
+}
+.journal-template .jt-inner-page .submission-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+  gap: 40px;
+}
+.journal-template .jt-inner-page .guidelines {
+  background: #f4f8fc;
+  border: 1px solid var(--jt-line);
+  border-top: 3px solid #0755a5;
+  padding: 25px;
+}
+.journal-template .jt-inner-page .guidelines h2 {
+  font-size: 25px;
+  font-weight: 800;
+}
+.journal-template .jt-inner-page .guidelines > p,
+.journal-template .jt-inner-page .guideline-item {
+  font-size: 13px;
+  color: #596f81;
+}
+.journal-template .jt-inner-page .guideline-item svg {
+  color: #0755a5;
+}
+.journal-template .jt-inner-page .form-panel {
+  border-color: var(--jt-line);
+  border-radius: 3px;
+  padding: 28px;
+}
+.journal-template .jt-inner-page .form-panel h2 {
+  font-size: 23px;
+  font-weight: 800;
+}
+.journal-template .jt-inner-page .form-label {
+  color: #294d69;
+  font-size: 13px;
+  font-weight: 600;
+}
+.journal-template .jt-inner-page .form-control,
+.journal-template .jt-inner-page .form-select {
+  border-color: #cddce8;
+  border-radius: 3px;
+  color: #283e50;
+  font-size: 13px;
+}
+.journal-template .jt-inner-page .form-control:focus,
+.journal-template .jt-inner-page .form-select:focus {
+  border-color: #3982c4;
+  box-shadow: 0 0 0 3px #0755a514;
+}
+.journal-template .jt-inner-page .upload-area {
+  background: #f4f8fc;
+  border-color: #a7c5df;
+  color: #0755a5;
+}
+.journal-template .jt-inner-page .checkbox-label {
+  font-size: 12px;
+  color: #63798a;
+}
+.journal-template .jt-inner-page .form-intro,
+.journal-template .jt-inner-page .guidelines-contact p {
+  font-size: 12px;
+  color: #63798a;
+}
+@media (max-width: 991px) {
+  .journal-template .jt-inner-page .contact-grid,
+  .journal-template .jt-inner-page .submission-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+}
+@media (max-width: 700px) {
+  .journal-template .jt-inner-page .library-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .journal-template .jt-inner-page .filters {
+    width: 100%;
+  }
+  .journal-template .jt-inner-page .form-panel {
+    padding: 22px 18px;
+  }
+  .journal-template .jt-inner-page .page-intro {
+    padding: 25px 0;
+  }
+  .journal-template .jt-inner-page .article-card {
+    padding: 18px 18px 0;
+  }
+}

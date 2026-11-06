@@ -1,0 +1,98 @@
+.join-us-actions > .btn {
+  padding: 3px 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  min-height: 26px;
+  min-width: 0;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.join-us-directory .admin-page-heading {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e1e8e5;
+  margin-bottom: 24px;
+}
+.join-us-directory .content-admin-toolbar {
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e1e8e5;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+.join-us-directory .card {
+  border: 1px solid #e1e8e5;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #173f3210;
+  overflow: auto;
+}
+.join-us-directory .content-admin-table {
+  min-width: 1250px;
+}
+.join-us-directory .content-admin-table th {
+  background: #f5f8f6;
+  color: #466355;
+  padding: 16px;
+  font-size: 12px;
+}
+.join-us-directory .content-admin-table td {
+  padding: 18px 16px;
+  border-color: #edf1ee;
+  vertical-align: top;
+  color: #52665e;
+}
+.join-us-directory .content-admin-table tbody tr:hover td {
+  background: #fbfdfb;
+}
+.join-us-directory .join-us-cell-name {
+  min-width: 160px;
+  font-weight: 600;
+  color: #183f36;
+}
+.join-us-directory .join-us-cell-email_id {
+  min-width: 190px;
+}
+.join-us-directory .join-us-cell-affiliation {
+  min-width: 160px;
+}
+.join-us-directory .join-us-cell-message {
+  min-width: 260px;
+  max-width: 360px;
+}
+.join-us-directory .join-us-cell-created_date {
+  min-width: 150px;
+  font-size: 12px;
+}
+.join-us-message summary {
+  list-style: none;
+  cursor: pointer;
+}
+.join-us-message summary::-webkit-details-marker {
+  display: none;
+}
+.join-us-message summary span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.6;
+}
+.join-us-message summary small {
+  display: inline-block;
+  margin-top: 6px;
+  color: #087f73;
+  font-weight: 600;
+}
+.join-us-message[open] summary span,
+.join-us-message[open] summary small {
+  display: none;
+}
+.join-us-message[open] summary::after {
+  content: "Collapse message";
+  color: #087f73;
+  font-size: 12px;
+}
+.join-us-message p {
+  white-space: pre-wrap;
+  margin: 8px 0 0;
+  line-height: 1.7;
+}

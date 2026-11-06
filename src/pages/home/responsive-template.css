@@ -1,0 +1,305 @@
+.research-template .jt-skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+  padding: 12px 18px;
+  border-radius: 6px;
+  background: #fff;
+  color: #173b60;
+  box-shadow: 0 2px 16px #102d4933;
+  transform: translateY(-160%);
+}
+.research-template .jt-skip-link:focus {
+  transform: translateY(0);
+}
+.research-template :is(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid #087ba8;
+  outline-offset: 3px;
+}
+.research-template #journal-content {
+  min-width: 0;
+}
+.research-template .jt-inner-page .page-intro {
+  padding-block: 20px;
+  min-height: 0;
+}
+.research-template .jt-inner-page .page-intro .intro-row {
+  padding-block: 0;
+}
+.research-template .jt-inner-page .page-intro .jt-intro-crumb {
+  margin-bottom: 10px;
+}
+.research-template .jt-intro-crumb {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.research-template :is(.jt-masthead-copy, .intro-row) .jt-intro-crumb {
+  color: #c3d6e5;
+}
+.research-template .jt-intro-crumb .breadcrumb {
+  font-size: 12px;
+  row-gap: 6px;
+}
+.research-template :is(.jt-masthead-copy, .intro-row) .breadcrumb {
+  --bs-breadcrumb-divider-color: #a9c6db;
+  --bs-breadcrumb-item-active-color: #fff;
+}
+.research-template :is(.jt-masthead-copy, .intro-row) .jt-intro-crumb a {
+  color: #c3e8f5;
+}
+.research-template .jt-brand {
+  min-width: 0;
+}
+.research-template .jt-brand > span {
+  min-width: 0;
+}
+.research-template .jt-identity .jt-brand {
+  flex: 1;
+}
+.research-template .jt-identity .jt-journal-title {
+  display: block;
+  max-width: 650px;
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 750;
+  text-wrap: initial;
+}
+.research-template #home .jt-masthead {
+  padding-block: 7px;
+  min-height: 0;
+}
+.research-template #home > .jt-content {
+  padding-bottom: 24px;
+}
+.research-template #home .jt-maincol > .jt-section:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.research-template .jt-brand small {
+  line-height: 1.5;
+  text-wrap: balance;
+}
+.research-template .jt-blue-nav .navbar-toggler {
+  display: none;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-color: #ffffff40;
+  border-radius: 6px;
+}
+.research-template .jt-blue-nav .navbar-toggler:hover {
+  background: #ffffff0d;
+}
+.research-template .jt-blue-nav .navbar-nav .nav-link {
+  font-size: 12px;
+  padding: 16px 10px;
+}
+.research-template .jt-about-dropdown {
+  border-radius: 0 0 8px 8px;
+}
+.research-template .jt-about-controls {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+.research-template .jt-blue-nav .jt-about-label-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+}
+.research-template .jt-blue-nav .jt-about-controls .nav-link {
+  padding-right: 4px;
+}
+.research-template .jt-about-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+}
+.research-template .jt-about-controls.active,
+.research-template .jt-about-toggle:hover {
+  background: #0b2a49;
+}
+.research-template .jt-about-names {
+  list-style: none;
+  margin: 0;
+  width: 285px;
+  max-width: 100%;
+}
+.research-template .jt-about-names .dropdown-item-text {
+  padding: 10px 18px;
+  color: #173b60;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: normal;
+}
+@media (min-width: 1200px) {
+  .research-template .jt-about-names {
+    max-width: none;
+  }
+}
+.research-template .jt-subnav nav {
+  gap: 24px;
+  scrollbar-width: thin;
+}
+.research-template .jt-section-head {
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+.research-template .jt-section-head h2 {
+  line-height: 1.35;
+}
+.research-template .jt-section-head > a {
+  flex-shrink: 0;
+}
+.research-template .article-card {
+  border-radius: 10px;
+  border-color: #dce5ed;
+}
+.research-template .article-card:hover {
+  border-color: #99bacf;
+  box-shadow: 0 6px 20px #173b600a;
+}
+.research-template .article-title h3 {
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.research-template .jt-side-section {
+  margin-top: 28px;
+}
+.research-template .jt-side-fact strong,
+.research-template .jt-contact a {
+  overflow-wrap: anywhere;
+}
+.research-template .jt-inner-page :is(.form-panel, .filters, .guidelines) {
+  border-radius: 10px;
+}
+.research-template
+  .jt-inner-page
+  :is(input:not([type="checkbox"]):not([type="radio"]), select, textarea) {
+  border-radius: 6px;
+  border-color: #cbd9e4;
+}
+.research-template
+  .jt-inner-page
+  :is(input:not([type="checkbox"]):not([type="radio"]), select) {
+  min-height: 44px;
+}
+.research-template
+  .jt-inner-page
+  :is(.library-layout, .results-grid, .article-layout)
+  > * {
+  min-width: 0;
+}
+.research-template .jt-footer .jt-brand small {
+  color: #bacbd9;
+}
+@media (max-width: 1199px) {
+  .research-template .jt-about-toggle {
+    width: 44px;
+    flex-shrink: 0;
+  }
+  .research-template .jt-blue-nav .navbar {
+    padding-block: 8px;
+  }
+  .research-template .jt-blue-nav .navbar-toggler {
+    display: inline-flex;
+  }
+  .research-template .jt-blue-nav .navbar-nav {
+    padding-top: 8px;
+  }
+  .research-template .jt-blue-nav .navbar-nav .nav-link {
+    min-height: 44px;
+    border-radius: 4px;
+    padding: 13px 14px;
+  }
+  .research-template .jt-about-dropdown {
+    margin: 0 12px 8px;
+    border-radius: 6px;
+  }
+  .research-template .jt-about-dropdown > a {
+    white-space: normal;
+    min-height: 44px;
+  }
+}
+@media (min-width: 601px) and (max-width: 991px) {
+  .research-template .rt-feature {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .research-template .rt-feature img {
+    height: 320px;
+  }
+  .research-template .rt-resource-card {
+    padding: 24px 18px;
+  }
+}
+@media (max-width: 600px) {
+  .research-template .container {
+    padding-inline: 20px;
+  }
+  .research-template .jt-utility .container {
+    flex-wrap: wrap;
+    gap: 4px 12px !important;
+  }
+  .research-template .jt-utility span {
+    font-size: 10px;
+  }
+  .research-template .jt-identity {
+    padding-block: 20px;
+  }
+  .research-template .jt-brand {
+    gap: 12px;
+  }
+  .research-template .jt-brand small {
+    max-width: 235px;
+    font-size: 11px;
+  }
+  .research-template .jt-identity-aside {
+    font-size: 11px;
+  }
+  .research-template .jt-header-search .form-control {
+    font-size: 16px;
+  }
+  .research-template .jt-masthead .jt-actions {
+    gap: 12px;
+  }
+  .research-template :is(.jt-primary-btn, .jt-outline-btn, .button) {
+    min-height: 44px;
+  }
+  .research-template .jt-section {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .research-template .jt-sidebar {
+    padding-inline: 12px;
+  }
+  .research-template .jt-inner-page .article-card {
+    padding: 20px;
+  }
+  .research-template .jt-inner-page .intro-row {
+    width: 100%;
+  }
+  .research-template .jt-footer {
+    padding-top: 40px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .research-template *,
+  .research-template *::before,
+  .research-template *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,38 @@
+.publication-ethics-content section {
+  margin: 28px 0;
+  padding-top: 24px;
+  border-top: 1px solid #dce5ed;
+}
+.publication-ethics-content ul {
+  padding-left: 24px;
+  margin-bottom: 18px;
+  color: #555f69;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.publication-ethics-content li {
+  padding-left: 4px;
+  margin-bottom: 8px;
+}
+.publication-ethics-content li::marker {
+  color: #006699;
+}
+.publication-ethics-content h4 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #173b60;
+  font-weight: 700;
+  margin: 22px 0 12px;
+}
+.ethics-similarity-note {
+  padding: 20px;
+  border-left: 3px solid #006699;
+  border-radius: 0 6px 6px 0;
+  background: #f1f6fa;
+}
+.ethics-similarity-note h4 {
+  margin-top: 0;
+}
+.ethics-similarity-note ul {
+  margin-bottom: 0;
+}

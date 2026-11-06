@@ -1,0 +1,9 @@
+.online-paper-actions > .btn {
+  padding: 3px 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  min-height: 26px;
+  min-width: 0;
+  border-radius: 4px;
+  white-space: nowrap;
+}

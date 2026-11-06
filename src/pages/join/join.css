@@ -1,0 +1,26 @@
+.join-application {
+  margin-top: 30px;
+}
+.research-template .join-application > h3 {
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+.join-application > p {
+  font-size: 13px;
+}
+.join-application fieldset {
+  min-width: 0;
+}
+.join-success {
+  padding: 30px;
+  margin-top: 30px;
+  background: #eff7f2;
+  border: 1px solid #d1e5d8;
+}
+.join-success > svg {
+  color: #2b7454;
+  margin-bottom: 15px;
+}
+.join-success p {
+  overflow-wrap: anywhere;
+}

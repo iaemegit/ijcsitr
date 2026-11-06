@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.next/
+src/generated/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.local/
+uploads/
+*.log
+old-db/migration-tools/
+old-db/postgresql-extracted.sql
+old-db/migration-expected.xml
+old-db/ijcsitr-mysql.sql
+old-db/*.dump

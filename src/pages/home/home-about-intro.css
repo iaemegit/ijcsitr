@@ -1,0 +1,51 @@
+.research-template .rt-about-intro {
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid #dce5ed;
+}
+.research-template .rt-about-intro h2 {
+  margin: 0 0 18px;
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 700;
+}
+.research-template .rt-about-intro h3 {
+  margin: 26px 0 16px;
+  font-size: 21px;
+  line-height: 1.4;
+}
+.research-template .rt-about-intro p {
+  color: #555f69;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.research-template .rt-about-intro .rt-about-intro-lead {
+  color: #173b60;
+  font-size: 17px;
+}
+.rt-about-platforms {
+  padding-left: 22px;
+  margin-bottom: 20px;
+  color: #173b60;
+  font-size: 15px;
+}
+.rt-about-platforms li {
+  padding-left: 4px;
+  margin-bottom: 6px;
+}
+.rt-about-platforms li::marker {
+  color: #006699;
+}
+.research-template .rt-about-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #dce5ed;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .research-template .rt-about-intro {
+    margin-top: 36px;
+    padding-top: 30px;
+  }
+}

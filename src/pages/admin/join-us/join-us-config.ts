@@ -1,0 +1,38 @@
+import type { ContentConfig } from "../../../components/admin/content-types";
+export const joinUsConfig: ContentConfig = {
+  key: "join-us",
+  title: "Join Us",
+  singular: "application",
+  id: "js_id",
+  create: false,
+  status: true,
+  fileField: "resume_cv",
+  fileType: "pdf",
+  fileLabel: "Resume / CV (PDF)",
+  description:
+    "Review applications to join the journal’s editorial and reviewer community.",
+  columns: [
+    "name",
+    "mobile_number",
+    "email_id",
+    "affiliation",
+    "country",
+    "message",
+    "created_date",
+  ],
+  search: ["name", "email_id", "affiliation", "country", "researcharea"],
+  fields: [
+    { key: "prefix", label: "Prefix" },
+    { key: "name", label: "Name", required: true },
+    { key: "email_id", label: "Email", type: "email" },
+    { key: "mobile_number", label: "Mobile Number", max: 20 },
+    { key: "affiliation", label: "Affiliation" },
+    { key: "qualifiaction", label: "Qualification", max: 5000 },
+    { key: "discipline", label: "Discipline", max: 5000 },
+    { key: "researcharea", label: "Research Area", max: 5000 },
+    { key: "city", label: "City" },
+    { key: "state", label: "State" },
+    { key: "country", label: "Country", type: "country" },
+    { key: "message", label: "Message", type: "textarea", max: 10000 },
+  ],
+};

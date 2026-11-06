@@ -1,0 +1,84 @@
+.cfp-form {
+  border: 1px solid #e0e7e9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+.cfp-form-body {
+  padding: 30px;
+}
+.cfp-form .form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #315e64;
+  margin-bottom: 8px;
+}
+.cfp-form .form-control,
+.cfp-form .form-select {
+  min-height: 44px;
+  border-color: #d5e0e5;
+  font-size: 14px;
+  border-radius: 7px;
+}
+.cfp-hint {
+  font-size: 12px;
+  color: #81909b;
+}
+.cfp-form-body > p {
+  margin-bottom: 26px;
+}
+.cfp-file-section {
+  padding-top: 24px;
+  margin-top: 30px;
+  border-top: 1px solid #e9eef0;
+}
+.cfp-current-file {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.cfp-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 20px 30px;
+  border-top: 1px solid #e9eef0;
+  background: #fbfcfc;
+}
+.cfp-table {
+  min-width: 1350px;
+  font-size: 13px;
+}
+.cfp-table th {
+  white-space: nowrap;
+}
+.cfp-toolbar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.cfp-toolbar .form-control {
+  max-width: 470px;
+}
+.cfp-toolbar .form-select {
+  max-width: 170px;
+}
+@media (max-width: 700px) {
+  .cfp-form-body {
+    padding: 22px 18px;
+  }
+  .cfp-form-actions {
+    padding: 18px;
+  }
+  .cfp-toolbar .form-control,
+  .cfp-toolbar .form-select {
+    max-width: 100%;
+  }
+  .cfp-current-file {
+    flex-wrap: wrap;
+  }
+}

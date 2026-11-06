@@ -1,0 +1,54 @@
+.home-aim-scope .home-scope-heading {
+  margin: 24px 0 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.home-aim-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0 26px;
+  margin: 24px 0 30px;
+}
+.home-aim-list > div {
+  padding: 16px 0;
+  border-top: 1px solid var(--jt-line);
+}
+.home-aim-list dt {
+  color: var(--jt-dark);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.home-aim-list dd {
+  color: #555f69;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+  white-space: pre-line;
+}
+.home-scope-formats {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px 24px;
+  padding: 0;
+  margin: 22px 0 0;
+  color: var(--jt-dark);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.home-scope-formats dt {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.home-scope-formats dd {
+  color: #555f69;
+  line-height: 1.8;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .home-aim-list,
+  .home-scope-formats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

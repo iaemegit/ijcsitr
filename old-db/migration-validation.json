@@ -1,0 +1,92 @@
+﻿[
+    {
+        "Table":  "affiliation",
+        "Rows":  97,
+        "VerifiedCells":  1552,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "article",
+        "Rows":  122,
+        "VerifiedCells":  4148,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "article_submission",
+        "Rows":  15,
+        "VerifiedCells":  255,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "author",
+        "Rows":  145,
+        "VerifiedCells":  3045,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "awards",
+        "Rows":  0,
+        "VerifiedCells":  0,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "callforpaper",
+        "Rows":  1,
+        "VerifiedCells":  15,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "contactus",
+        "Rows":  12,
+        "VerifiedCells":  96,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "discipline",
+        "Rows":  1,
+        "VerifiedCells":  10,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "editorial_board",
+        "Rows":  202,
+        "VerifiedCells":  4848,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "joinus",
+        "Rows":  43,
+        "VerifiedCells":  903,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "journal",
+        "Rows":  1,
+        "VerifiedCells":  25,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "journal_issue",
+        "Rows":  22,
+        "VerifiedCells":  440,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "membership",
+        "Rows":  1,
+        "VerifiedCells":  25,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "tbl_apc",
+        "Rows":  0,
+        "VerifiedCells":  0,
+        "Result":  "PASS"
+    },
+    {
+        "Table":  "users",
+        "Rows":  6,
+        "VerifiedCells":  30,
+        "Result":  "PASS"
+    }
+]

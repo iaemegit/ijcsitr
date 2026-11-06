@@ -1,0 +1,47 @@
+.research-template .home-contact-section {
+  margin-top: 32px;
+  padding: 28px 20px;
+  background: #f7f8fa;
+  border-radius: 10px;
+}
+.research-template .home-contact-section > h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 28px;
+}
+.research-template .home-contact-card {
+  align-items: center;
+  padding: 24px 14px;
+  border: 1px solid #eef0f3;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 3px 6px #173b600d;
+  text-align: center;
+}
+.home-contact-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  color: #4b5563;
+}
+.research-template .home-contact-card h3 {
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+.research-template .home-contact-card p {
+  font-size: 13px;
+  margin: 0;
+}
+.research-template .home-contact-card a {
+  color: #c62838;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 767px) {
+  .research-template .home-contact-section {
+    padding-inline: 16px;
+  }
+}

@@ -1,0 +1,13 @@
+.privacy-statement-content section {
+  margin-block: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #dce5ed;
+}
+.research-template .privacy-statement-content section h2 {
+  font-size: 21px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+.privacy-statement-content a {
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,38 @@
+.research-template .publishing-content h2 {
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+.research-template .publishing-content h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+.publishing-steps {
+  padding-left: 24px;
+  margin: 24px 0;
+}
+.publishing-steps li {
+  padding: 0 0 18px 10px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #dce5ed;
+}
+.publishing-steps li::marker {
+  color: #006699;
+  font-weight: 700;
+}
+.publishing-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+.publishing-guidelines th {
+  width: 35%;
+  color: #173b60;
+  font-weight: 600;
+}
+.publishing-guidelines :is(th, td) {
+  padding: 14px;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}

@@ -1,0 +1,40 @@
+.home-policy-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+.research-template .home-policy-card {
+  position: relative;
+  padding: 22px 18px;
+  border: 1px solid #dce5ed;
+  border-top: 3px solid #173b60;
+  border-radius: 8px;
+  background: #f5f8fb;
+  color: #173b60;
+  text-decoration: none;
+  gap: 16px;
+  height: 100%;
+}
+.research-template .home-policy-card:hover {
+  background: #eaf2f8;
+  border-color: #99bacf;
+  text-decoration: none;
+}
+.home-policy-card > span {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.home-policy-icon {
+  color: #006699;
+}
+.home-policy-arrow {
+  margin-top: auto;
+}
+@media (max-width: 600px) {
+  .home-policy-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,378 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model affiliation {
+  aff_id             BigInt               @id @default(autoincrement())
+  address            String               @db.VarChar(255)
+  aff_code           String?              @db.VarChar(255)
+  aff_name           String               @db.VarChar(255)
+  alternate_name     String?              @db.VarChar(255)
+  country            String               @db.VarChar(255)
+  created_date       DateTime             @db.DateTime(6)
+  created_userid     Int?
+  created_usertype   Int?
+  logo               String?              @db.VarChar(255)
+  papers_published   Int
+  status             Int?                 @db.SmallInt
+  updated_date       DateTime?            @db.DateTime(6)
+  updated_userid     Int?
+  updated_usertype   Int?
+  website            String?              @db.VarChar(255)
+  author             author[]
+  author_affiliation author_affiliation[]
+}
+
+model article {
+  article_id           Int       @id @default(autoincrement())
+  abstract             String    @db.LongText
+  article_file         String?   @db.VarChar(255)
+  article_pdf_storage  String?   @db.VarChar(255)
+  article_word_file    String?   @db.VarChar(255)
+  article_key          String    @db.VarChar(255)
+  article_title        String    @db.VarChar(255)
+  author_ids           String?   @db.VarChar(255)
+  citation             Int?
+  copyright            String?   @db.LongText
+  corresponding_author String?   @db.VarChar(255)
+  created_date         DateTime  @db.DateTime(6)
+  created_userid       Int?
+  created_usertype     Int?
+  date_of_acceptance   DateTime? @db.Date
+  date_of_publication  DateTime  @db.Date
+  date_of_received     DateTime? @db.Date
+  doi                  String?   @db.VarChar(255)
+  downloads            Int?
+  google_scholar       String?   @db.VarChar(255)
+  issue                String    @db.VarChar(255)
+  journal_id           Int
+  keywords             String    @db.LongText
+  month_from           String    @db.VarChar(255)
+  month_to             String    @db.VarChar(255)
+  page_from            String    @db.VarChar(255)
+  page_to              String    @db.VarChar(255)
+  reference            String    @db.LongText
+  share_count          Int?
+  status               Int?      @db.SmallInt
+  updated_date         DateTime? @db.DateTime(6)
+  updated_userid       Int?
+  updated_usertype     Int?
+  views                Int?
+  volume               String    @db.VarChar(255)
+  year                 String    @db.VarChar(255)
+}
+
+model article_submission {
+  abs_id            Int       @id @default(autoincrement())
+  article_title     String?   @db.LongText
+  author_name       String?   @db.LongText
+  country           String?   @db.LongText
+  created_date      DateTime  @db.DateTime(6)
+  created_userid    Int?
+  created_usertype  Int?
+  discipline_title  String?   @db.LongText
+  email             String?   @db.LongText
+  journal_id        String?   @db.VarChar(30)
+  keywords          String?   @db.LongText
+  mobile_number     String?   @db.VarChar(20)
+  status            Int?      @db.SmallInt
+  updated_date      DateTime? @db.DateTime(6)
+  updated_userid    Int?
+  updated_usertype  Int?
+  upload_manuscript String?   @db.LongText
+}
+
+model author {
+  author_id          BigInt               @id @default(autoincrement())
+  address            String               @db.LongText
+  alternate_name     String?              @db.LongText
+  author_code        String?              @db.LongText
+  country            String?              @db.LongText
+  created_date       DateTime             @db.DateTime(6)
+  created_userid     Int?
+  created_usertype   Int?
+  department         String?              @db.LongText
+  designation        String?              @db.LongText
+  first_name         String               @db.LongText
+  last_name          String?              @db.LongText
+  logo               String?              @db.LongText
+  papers_published   Int?
+  prefix             String?              @db.LongText
+  profile_views      Int?
+  status             Int?                 @db.SmallInt
+  university         String               @db.LongText
+  updated_date       DateTime?            @db.DateTime(6)
+  updated_userid     Int?
+  updated_usertype   Int?
+  email              String?              @db.VarChar(255)
+  affiliation_id     BigInt?
+  affiliation        affiliation?         @relation(fields: [affiliation_id], references: [aff_id], onUpdate: NoAction, map: "author_affiliation_fk")
+  author_affiliation author_affiliation[]
+
+  @@index([affiliation_id], map: "author_affiliation_fk")
+}
+
+model author_affiliation {
+  author_id      BigInt
+  affiliation_id BigInt
+  department     String?     @db.Text
+  display_order  Int         @default(0)
+  affiliation    affiliation @relation(fields: [affiliation_id], references: [aff_id], onUpdate: NoAction, map: "author_affiliations_affiliation_fk")
+  author         author      @relation(fields: [author_id], references: [author_id], onDelete: Cascade, onUpdate: NoAction, map: "author_affiliations_author_fk")
+
+  @@id([author_id, affiliation_id])
+  @@index([affiliation_id], map: "author_affiliations_affiliation_fk")
+}
+
+model awards {
+  id               Int       @id @default(autoincrement())
+  academia         String?   @db.VarChar(255)
+  affiliation      String?   @db.VarChar(255)
+  award_type       String?   @db.VarChar(255)
+  content          String?   @db.VarChar(255)
+  created_date     DateTime? @db.DateTime(6)
+  created_userid   Int?
+  created_usertype Int?
+  email            String?   @db.VarChar(255)
+  google_scholar   String?   @db.VarChar(255)
+  linkedin         String?   @db.VarChar(255)
+  name             String    @db.VarChar(255)
+  orcid            String?   @db.VarChar(255)
+  profile_photo    String?   @db.VarChar(255)
+  researchgate     String?   @db.VarChar(255)
+  status           Int?
+  updated_date     DateTime? @db.DateTime(6)
+  updated_userid   Int?
+  updated_usertype Int?
+}
+
+model callforpaper {
+  call_id          Int       @id @default(autoincrement())
+  created_date     DateTime  @db.DateTime(6)
+  created_userid   Int?
+  created_usertype Int?
+  deadline         DateTime  @db.Date
+  dispatch_date    DateTime  @db.Date
+  dispatch_month   String    @db.VarChar(45)
+  dispatch_year    String    @db.VarChar(45)
+  file             String?   @db.LongText
+  issue_month      String    @db.VarChar(45)
+  issue_year       String    @db.VarChar(45)
+  status           Int       @db.SmallInt
+  updated_date     DateTime? @db.DateTime(6)
+  updated_userid   Int?
+  updated_usertype Int?
+}
+
+model contactus {
+  id            Int       @id @default(autoincrement())
+  created_date  DateTime? @db.DateTime(6)
+  email_id      String?   @db.VarChar(255)
+  message       String?   @db.VarChar(255)
+  mobile_number String?   @db.VarChar(255)
+  name          String?   @db.VarChar(255)
+  subject       String?   @db.VarChar(255)
+  update_date   DateTime? @db.DateTime(6)
+}
+
+model discipline {
+  discipline_id    BigInt    @id @default(autoincrement())
+  created_date     DateTime? @db.DateTime(6)
+  created_userid   Int?
+  created_usertype Int?
+  department       String?   @db.LongText
+  discipline_name  String?   @db.LongText
+  status           Int?
+  updated_date     DateTime? @db.DateTime(6)
+  updated_userid   Int?
+  updated_usertype Int?
+}
+
+model editorial_board {
+  member_id              Int       @id @default(autoincrement())
+  created_date           DateTime? @db.DateTime(6)
+  created_userid         Int?
+  created_usertype       Int?
+  editor_affiliation     String    @db.LongText
+  editor_email           String?   @db.VarChar(255)
+  editor_name            String    @db.LongText
+  editor_type            String    @db.VarChar(255)
+  google_scholar_profile String?   @db.VarChar(255)
+  institutional_profile  String?   @db.VarChar(255)
+  journal_id             Int
+  linkedin               String?   @db.VarChar(255)
+  member_key             String?   @db.LongText
+  orcid_link             String?   @db.VarChar(255)
+  prefix                 String    @db.LongText
+  profile_link           String?   @db.VarChar(255)
+  profile_photo          String?   @db.LongText
+  publon_link            String?   @db.VarChar(255)
+  research_gate_profile  String?   @db.VarChar(255)
+  scopus_author_id       String?   @db.VarChar(255)
+  status                 Int?      @db.SmallInt
+  updated_date           DateTime? @db.DateTime(6)
+  updated_userid         Int?
+  updated_usertype       Int?
+}
+
+model joinus {
+  js_id            Int       @id @default(autoincrement())
+  affiliation      String?   @db.VarChar(255)
+  city             String?   @db.LongText
+  country          String?   @db.LongText
+  created_date     DateTime  @db.DateTime(6)
+  created_userid   Int?
+  created_usertype Int?
+  discipline       String?   @db.LongText
+  message          String?   @db.LongText
+  mobile_number    String?   @db.VarChar(20)
+  name             String?   @db.LongText
+  prefix           String?   @db.VarChar(255)
+  qualifiaction    String?   @db.LongText
+  researcharea     String?   @db.LongText
+  resume_cv        String?   @db.LongText
+  state            String?   @db.LongText
+  status           Int?      @db.SmallInt
+  updated_date     DateTime? @db.DateTime(6)
+  updated_userid   Int?
+  updated_usertype Int?
+  email_id         String?   @db.VarChar(255)
+}
+
+model journal {
+  journal_id            BigInt    @id @default(autoincrement())
+  abbrevation           String?   @db.VarChar(255)
+  about_us              String?   @db.LongText
+  coden                 String?   @db.VarChar(255)
+  cover_page            String?   @db.VarChar(255)
+  created_date          DateTime? @db.DateTime(6)
+  created_userid        Int?
+  created_usertype      Int?
+  discipline_id         Int?
+  doi                   String?   @db.VarChar(255)
+  email                 String?   @db.VarChar(255)
+  google_scholar        String?   @db.VarChar(255)
+  issn_online           String?   @db.VarChar(255)
+  issn_print            String?   @db.VarChar(255)
+  journal_key           String    @db.VarChar(255)
+  journal_name          String    @db.VarChar(255)
+  publication_frequency String    @db.VarChar(255)
+  start_month           String    @db.VarChar(255)
+  start_year            String    @db.VarChar(255)
+  status                Int?      @db.SmallInt
+  sub_price             String?   @db.VarChar(255)
+  subject_area          String?   @db.LongText
+  updated_date          DateTime? @db.DateTime(6)
+  updated_userid        Int?
+  updated_usertype      Int?
+}
+
+model journal_issue {
+  issue_id            BigInt    @id @default(autoincrement())
+  cover_image         String?   @db.LongText
+  created_date        DateTime? @db.DateTime(6)
+  created_userid      Int?
+  created_usertype    Int?
+  file_path           String?   @db.VarChar(255)
+  from_month          String    @db.VarChar(255)
+  issue_no            String    @db.VarChar(255)
+  journals_id         BigInt
+  special_issue       String?   @db.VarChar(255)
+  special_issue_title String?   @db.VarChar(255)
+  status              Int?      @db.SmallInt
+  table_of_contents   String?   @db.VarChar(255)
+  title               String?   @db.VarChar(255)
+  to_month            String    @db.VarChar(255)
+  updated_date        DateTime? @db.DateTime(6)
+  updated_userid      Int?
+  updated_usertype    Int?
+  volume_no           String    @db.VarChar(255)
+  year                String    @db.VarChar(255)
+}
+
+model membership {
+  membership_id            Int       @id @default(autoincrement())
+  academia_link            String?   @db.VarChar(255)
+  affiliation              String?   @db.VarChar(255)
+  created_date             DateTime? @db.DateTime(6)
+  created_userid           Int?
+  created_usertype         Int?
+  email                    String?   @db.VarChar(255)
+  github                   String?   @db.VarChar(255)
+  google_scholar_link      String?   @db.VarChar(255)
+  institution_profile_link String?   @db.VarChar(255)
+  membership_type          String?   @db.VarChar(255)
+  membership_year          Int?
+  mobile_number            String?   @db.VarChar(255)
+  name                     String?   @db.VarChar(255)
+  orcid                    String?   @db.VarChar(255)
+  photo                    String?   @db.VarChar(255)
+  researchgate_link        String?   @db.VarChar(255)
+  scopus_link              String?   @db.VarChar(255)
+  specialization           String?   @db.VarChar(255)
+  ssrn                     String?   @db.VarChar(255)
+  status                   Int?      @db.SmallInt
+  updated_date             DateTime? @db.DateTime(6)
+  updated_userid           Int?
+  updated_usertype         Int?
+  wos_link                 String?   @db.VarChar(255)
+}
+
+model tbl_apc {
+  apc_id                 BigInt    @id @default(autoincrement())
+  acceptance_publication Int
+  acceptance_rate        Float
+  apc_price              String    @db.VarChar(255)
+  cite_score             Float?
+  created_date           DateTime  @db.DateTime(6)
+  created_userid         Int?
+  created_usertype       Int?
+  indexing1              String?   @db.LongText
+  indexing2              String?   @db.LongText
+  issue_per_year         Int
+  journal_id             BigInt
+  lower_middle_price     String?   @db.VarChar(255)
+  status                 Int?      @db.SmallInt
+  submission_final       Int
+  updated_date           DateTime? @db.DateTime(6)
+  updated_userid         Int?
+  updated_usertype       Int?
+}
+
+model downloads {
+ id Int @id @default(autoincrement())
+ title String @db.VarChar(255)
+ description String? @db.Text
+ file_url String @db.VarChar(2000)
+ status Int @default(1) @db.SmallInt
+ created_date DateTime @db.DateTime(6)
+ created_userid Int?
+ updated_date DateTime? @db.DateTime(6)
+ updated_userid Int?
+}
+model testimonial {
+ id Int @id @default(autoincrement())
+ name String @db.VarChar(255)
+ affiliation String? @db.VarChar(255)
+ designation String? @db.VarChar(255)
+ email String? @db.VarChar(255)
+ message String @db.Text
+ photo_url String? @db.VarChar(2000)
+ status Int @default(0) @db.SmallInt
+ created_date DateTime @db.DateTime(6)
+ created_userid Int?
+ updated_date DateTime? @db.DateTime(6)
+ updated_userid Int?
+}
+model users {
+  user_id         BigInt    @id @default(autoincrement())
+  user_created_at DateTime? @db.DateTime(6)
+  user_name       String?   @db.VarChar(255)
+  user_password   String?   @db.VarChar(255)
+  user_updated_at DateTime? @db.DateTime(6)
+}

@@ -1,0 +1,118 @@
+.research-template #home .rt-discovery {
+  padding-block: 32px;
+}
+.research-template #home .rt-feature {
+  gap: 28px;
+}
+.research-template #home .rt-feature h2 {
+  margin-block: 12px 16px;
+}
+.research-template #home .rt-feature p {
+  margin-bottom: 16px;
+}
+.research-template #home :is(.rt-about-intro, .rt-why-choose) {
+  margin-top: 28px;
+  padding-top: 24px;
+}
+.research-template #home :is(.rt-about-intro h2, .rt-why-choose h2) {
+  margin-bottom: 18px;
+}
+.research-template #home .rt-about-intro h3 {
+  margin-block: 18px 12px;
+}
+.research-template #home .rt-resource-grid {
+  margin-top: 28px;
+  gap: 18px;
+}
+.research-template #home .rt-resource-card {
+  padding: 22px;
+}
+.research-template #home .rt-resource-card h3 {
+  margin-block: 12px 10px;
+}
+.research-template #home .rt-resource-card p {
+  margin-bottom: 14px;
+}
+.research-template #home .rt-publishing-card {
+  padding: 20px;
+}
+.research-template #home .rt-publishing-icon {
+  margin-bottom: 12px;
+}
+.research-template #home .rt-publishing-card p {
+  margin-bottom: 12px;
+}
+.research-template #home > .jt-content {
+  padding-block: 28px 20px;
+}
+.research-template #home .jt-section {
+  margin-bottom: 24px;
+  padding-bottom: 22px;
+}
+.research-template #home .jt-maincol > .jt-section:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.research-template #home .jt-section-head {
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+}
+.research-template #home .jt-side-section {
+  margin-block: 18px;
+  padding-bottom: 16px;
+}
+.research-template #home .jt-submitbox {
+  padding: 20px;
+  margin-bottom: 18px;
+}
+.research-template #home .jt-side-fact {
+  padding-block: 7px;
+}
+.research-template #home .jt-side-links a {
+  padding-block: 8px;
+}
+.research-template #home .home-policy-cards {
+  margin-top: 20px;
+}
+.research-template #home .home-policy-card {
+  padding: 18px 16px;
+  gap: 12px;
+}
+.research-template #home .home-contact-section {
+  margin-top: 24px;
+  padding: 22px 18px;
+}
+.research-template #home .home-contact-section > h2 {
+  margin-bottom: 20px;
+}
+.research-template #home .home-contact-card {
+  padding-block: 20px;
+}
+.research-template #home .home-indexing {
+  padding-block: 24px;
+}
+.research-template #home .home-indexing h2 {
+  margin-bottom: 18px;
+}
+.research-template #home .home-indexing-grid {
+  row-gap: 12px;
+  margin-bottom: 20px;
+}
+.research-template #home .jt-author-call {
+  padding-block: 28px;
+}
+.research-template #home .jt-steps {
+  padding-block: 28px;
+}
+@media (max-width: 600px) {
+  .research-template #home .rt-discovery {
+    padding-block: 24px;
+  }
+  .research-template #home :is(.rt-about-intro, .rt-why-choose) {
+    margin-top: 22px;
+    padding-top: 20px;
+  }
+  .research-template #home .rt-feature {
+    gap: 20px;
+  }
+}

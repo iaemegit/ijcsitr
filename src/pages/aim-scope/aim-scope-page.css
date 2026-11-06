@@ -1,0 +1,33 @@
+.aim-scope-page section + section {
+  margin-top: 36px;
+  padding-top: 30px;
+  border-top: 1px solid #dce5ed;
+}
+.aim-scope-objectives,
+.aim-scope-topics {
+  margin: 24px 0;
+}
+.aim-scope-objectives > div,
+.aim-scope-topics > div {
+  margin-bottom: 22px;
+  padding-left: 18px;
+  border-left: 3px solid #dce9f2;
+}
+.aim-scope-page dt {
+  color: #173b60;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+.aim-scope-page dd {
+  color: #555f69;
+  font-size: 15px;
+  line-height: 1.8;
+  white-space: pre-line;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .aim-scope-page section + section {
+    margin-top: 28px;
+    padding-top: 24px;
+  }
+}

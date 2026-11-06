@@ -1,0 +1,92 @@
+﻿[
+    {
+        "Table":  "affiliation",
+        "Rows":  97,
+        "Columns":  16,
+        "NextId":  100
+    },
+    {
+        "Table":  "article",
+        "Rows":  122,
+        "Columns":  34,
+        "NextId":  125
+    },
+    {
+        "Table":  "article_submission",
+        "Rows":  15,
+        "Columns":  17,
+        "NextId":  18
+    },
+    {
+        "Table":  "author",
+        "Rows":  145,
+        "Columns":  21,
+        "NextId":  147
+    },
+    {
+        "Table":  "awards",
+        "Rows":  0,
+        "Columns":  19,
+        "NextId":  2
+    },
+    {
+        "Table":  "callforpaper",
+        "Rows":  1,
+        "Columns":  15,
+        "NextId":  3
+    },
+    {
+        "Table":  "contactus",
+        "Rows":  12,
+        "Columns":  8,
+        "NextId":  13
+    },
+    {
+        "Table":  "discipline",
+        "Rows":  1,
+        "Columns":  10,
+        "NextId":  4
+    },
+    {
+        "Table":  "editorial_board",
+        "Rows":  202,
+        "Columns":  24,
+        "NextId":  205
+    },
+    {
+        "Table":  "joinus",
+        "Rows":  43,
+        "Columns":  21,
+        "NextId":  49
+    },
+    {
+        "Table":  "journal",
+        "Rows":  1,
+        "Columns":  25,
+        "NextId":  3
+    },
+    {
+        "Table":  "journal_issue",
+        "Rows":  22,
+        "Columns":  20,
+        "NextId":  25
+    },
+    {
+        "Table":  "membership",
+        "Rows":  1,
+        "Columns":  25,
+        "NextId":  2
+    },
+    {
+        "Table":  "tbl_apc",
+        "Rows":  0,
+        "Columns":  18,
+        "NextId":  3
+    },
+    {
+        "Table":  "users",
+        "Rows":  6,
+        "Columns":  5,
+        "NextId":  8
+    }
+]

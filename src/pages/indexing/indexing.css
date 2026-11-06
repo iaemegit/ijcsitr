@@ -1,0 +1,70 @@
+.indexing-definition {
+  height: 100%;
+  padding: 24px;
+  background: #f4f8fb;
+  border: 1px solid #dce5ed;
+}
+.indexing-definition > svg {
+  color: #006699;
+  margin-bottom: 16px;
+}
+.research-template .indexing-definition h3,
+.research-template .indexing-benefits h3,
+.research-template .indexing-platforms h3 {
+  font-size: 17px;
+  margin: 0 0 8px;
+}
+.research-template .indexing-definition p,
+.research-template .indexing-benefits p,
+.research-template .indexing-platforms p {
+  margin: 0;
+}
+.indexing-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.indexing-benefits li {
+  border-top: 3px solid #006699;
+  padding-top: 16px;
+}
+.indexing-platforms {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+  border-top: 1px solid #dce5ed;
+}
+.indexing-platforms li {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 23px 0;
+  border-bottom: 1px solid #dce5ed;
+}
+.indexing-platforms li > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.indexing-platform-number {
+  color: #006699;
+  background: #edf5f9;
+  padding: 9px 11px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.indexing-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.indexing-source svg {
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .indexing-benefits {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

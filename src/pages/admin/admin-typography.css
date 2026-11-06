@@ -1,0 +1,233 @@
+.admin-workspace.admin-workspace {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.admin-workspace.admin-workspace .admin-sidebar nav > a {
+  min-height: 46px;
+  padding: 11px 14px;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.admin-workspace.admin-workspace .admin-sidebar nav {
+  gap: 4px;
+}
+.admin-workspace.admin-workspace .admin-menu-label {
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.admin-workspace.admin-workspace .admin-sidebar nav > .admin-menu-label {
+  margin-top: 18px;
+}
+.admin-workspace.admin-workspace .admin-sidebar > .admin-logo {
+  margin-bottom: 24px;
+}
+.admin-workspace.admin-workspace .admin-logo small {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.admin-workspace.admin-workspace .admin-sidebar-bottom {
+  padding: 16px 12px 0;
+}
+.admin-workspace.admin-workspace .admin-sidebar-bottom > a {
+  padding-bottom: 12px;
+  font-size: 12px;
+}
+.admin-workspace.admin-workspace .admin-sidebar-bottom > span {
+  font-size: 11px;
+  margin-top: 12px;
+}
+.admin-workspace.admin-workspace .admin-sidebar-bottom b {
+  font-size: 11px;
+}
+.admin-workspace.admin-workspace .admin-topbar {
+  min-height: 72px;
+  height: auto;
+  padding: 12px 24px;
+  gap: 16px;
+}
+.admin-workspace.admin-workspace .admin-topbar > div:first-child > span {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.admin-workspace.admin-workspace .admin-user-name {
+  font-size: 14px;
+}
+.admin-workspace.admin-workspace .admin-user-name small {
+  font-size: 12px;
+}
+.admin-workspace.admin-workspace .admin-content {
+  padding: 24px;
+}
+.admin-workspace.admin-workspace .admin-page-heading {
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.admin-workspace.admin-workspace h1 {
+  font-size: 28px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: -.5px;
+}
+.admin-workspace.admin-workspace h2 {
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 650;
+}
+.admin-workspace.admin-workspace h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 650;
+}
+.admin-workspace.admin-workspace :is(.admin-page-heading p, .admin-form-card p, .admin-table-toolbar p, .admin-stats .card > span) {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.admin-workspace.admin-workspace .eyebrow {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.admin-workspace.admin-workspace :is(.form-label, .form-check-label) {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.admin-workspace.admin-workspace :is(.form-control, .form-select, .input-group-text) {
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 44px;
+  padding: 10px 12px;
+}
+.admin-workspace.admin-workspace textarea.form-control {
+  min-height: 110px;
+}
+.admin-workspace.admin-workspace .admin-table-search .form-control {
+  padding-inline: 38px 34px;
+}
+.admin-workspace.admin-workspace .admin-table-search > svg {
+  top: 14px;
+}
+.admin-workspace.admin-workspace :is(.btn, .button) {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  min-height: 44px;
+  padding: 11px 14px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: normal;
+}
+.admin-workspace.admin-workspace :is(.btn-sm, .admin-row-actions .btn) {
+  font-size: 13px;
+  min-height: 36px;
+  padding: 7px 10px;
+  gap: 6px;
+}
+.admin-workspace.admin-workspace .admin-row-actions {
+  flex-wrap: nowrap;
+  width: max-content;
+}
+.admin-workspace.admin-workspace .admin-row-actions .btn {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.admin-workspace.admin-workspace .icon-button {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  min-height: 36px;
+  padding: 6px;
+  flex-shrink: 0;
+}
+.admin-workspace.admin-workspace .table {
+  font-size: 14px;
+}
+.admin-workspace.admin-workspace .table :is(th, td) {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 14px 16px;
+  vertical-align: middle;
+}
+.admin-workspace.admin-workspace .table thead th {
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: .15px;
+}
+.admin-workspace.admin-workspace :is(.admin-id, .admin-date, .admin-status, .admin-empty-value, .discipline-used, .admin-table-footer, .admin-table-note, .admin-footer, .form-text, .invalid-feedback) {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.admin-workspace.admin-workspace :is(.admin-table-toolbar, .admin-table-footer) {
+  padding: 18px 20px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.admin-workspace.admin-workspace :is(.discipline-form-body, .affiliation-form-body, .author-form-body, .journal-form-body, .issue-add-body, .content-admin-form-body) {
+  padding: 24px;
+}
+.admin-workspace.admin-workspace [class$="-form-actions"] {
+  padding: 18px 24px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.admin-workspace.admin-workspace .admin-dashboard-section {
+  margin-top: 28px;
+}
+.admin-workspace.admin-workspace .admin-stats .card {
+  padding: 22px;
+  gap: 10px;
+}
+.admin-workspace.admin-workspace .admin-stats .card strong {
+  font-size: 30px;
+  line-height: 1.3;
+}
+.admin-workspace.admin-workspace .admin-form-card {
+  padding: 22px;
+  gap: 18px;
+}
+.admin-workspace.admin-workspace .admin-form-card > div > span {
+  font-size: 13px;
+  margin-top: 12px;
+}
+.admin-workspace.admin-workspace .admin-footer {
+  padding: 16px 24px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+@media (max-width: 700px) {
+  .admin-workspace.admin-workspace .admin-content {
+    padding: 18px 16px;
+  }
+  .admin-workspace.admin-workspace .admin-topbar {
+    padding-inline: 16px;
+    gap: 10px;
+  }
+  .admin-workspace.admin-workspace .admin-topbar > div {
+    gap: 8px;
+  }
+  .admin-workspace.admin-workspace .admin-logout {
+    margin-left: 0;
+    padding-inline: 10px;
+  }
+  .admin-workspace.admin-workspace h1 {
+    font-size: 25px;
+  }
+  .admin-workspace.admin-workspace :is(.discipline-form-body, .affiliation-form-body, .author-form-body, .journal-form-body, .issue-add-body, .content-admin-form-body) {
+    padding: 18px;
+  }
+  .admin-workspace.admin-workspace [class$="-form-actions"] {
+    padding: 16px 18px;
+  }
+  .admin-workspace.admin-workspace .admin-footer {
+    padding-inline: 16px;
+  }
+}

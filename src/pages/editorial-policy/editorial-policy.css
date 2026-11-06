@@ -1,0 +1,19 @@
+.editorial-policy-sections section {
+  margin: 28px 0;
+  padding-top: 24px;
+  border-top: 1px solid #dce5ed;
+}
+.editorial-policy-sections ul {
+  padding-left: 24px;
+  margin-bottom: 18px;
+  color: #555f69;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.editorial-policy-sections li {
+  margin-bottom: 8px;
+  padding-left: 4px;
+}
+.editorial-policy-sections li::marker {
+  color: #006699;
+}

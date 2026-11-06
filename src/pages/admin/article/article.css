@@ -1,0 +1,222 @@
+.article-admin-form {
+  width: 100%;
+  overflow: hidden;
+}
+.article-form-title {
+  font-size: 21px;
+  font-weight: 600;
+  color: #4f46b0;
+  margin-bottom: 28px;
+}
+.article-admin-form .form-control,
+.article-admin-form .form-select {
+  border-radius: 8px;
+  box-shadow: 0 2px 3px #24396812;
+}
+.article-admin-form .journal-editor .tiptap {
+  min-height: 260px;
+}
+.article-form-actions .button {
+  border-radius: 999px;
+  min-width: 85px;
+}
+.article-form-actions .button:not(.outline) {
+  background: #00c7b1;
+  border-color: #00c7b1;
+  color: #fff;
+}
+.article-form-actions .button.outline {
+  background: #929ba9;
+  border-color: #929ba9;
+  color: #fff;
+}
+.article-author-search-button {
+  background: #818cf8;
+  border-color: #818cf8;
+}
+.article-selected-table {
+  min-width: 650px;
+  font-size: 13px;
+}
+.article-current-file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 13px;
+}
+.article-author-dialog {
+  width: min(1000px, calc(100vw - 32px));
+  max-height: calc(100dvh - 48px);
+  border: 0;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 20px 70px #0003;
+  color: #344054;
+}
+.article-author-dialog::backdrop {
+  background: #122b3b80;
+}
+.article-author-dialog-heading,
+.article-author-dialog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.article-author-dialog-heading h3 {
+  font-size: 20px;
+  margin: 0;
+}
+.article-author-dialog-footer {
+  margin: 18px 0 0;
+}
+.article-author-dialog .article-author-results {
+  max-height: min(45dvh, 420px);
+}
+.article-author-dialog .form-control {
+  font-size: 14px;
+}
+.article-form-body {
+  padding: 26px;
+}
+.article-admin-form .form-label {
+  font-size: 13px;
+  color: #087f8c;
+}
+.article-admin-form .form-control,
+.article-admin-form .form-select {
+  font-size: 14px;
+  min-height: 42px;
+  border-color: #bdc8e4;
+}
+.article-admin-form .form-label .text-danger {
+  display: inline;
+}
+.article-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 20px 26px;
+  border-top: 1px solid #e2e7ed;
+}
+.article-field-hint {
+  display: block;
+  color: #738195;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 6px;
+}
+.article-author-picker {
+  padding: 18px;
+  border: 1px solid #dce4ed;
+  border-radius: 6px;
+}
+.article-author-results {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 12px;
+  border: 1px solid #e5e9ef;
+  border-radius: 4px;
+}
+.article-author-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #edf0f4;
+  cursor: pointer;
+  font-size: 13px;
+}
+.article-author-option .form-check-input {
+  flex-shrink: 0;
+  margin: 0;
+}
+.article-author-option strong {
+  font-weight: 600;
+}
+.article-author-option small {
+  display: block;
+  color: #7b8796;
+  font-size: 11px;
+}
+.article-author-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.article-chosen-authors {
+  margin-top: 18px;
+}
+.article-chosen-authors h3 {
+  font-size: 14px;
+}
+.article-chosen-authors li {
+  padding: 7px 0;
+  font-size: 13px;
+}
+.article-chosen-authors li > div {
+  display: inline-flex;
+  margin-left: 12px;
+}
+.article-data-table {
+  min-width: 1100px;
+}
+.article-data-table td:nth-child(2) {
+  min-width: 250px;
+  max-width: 380px;
+  overflow-wrap: anywhere;
+}
+.article-data-table td:nth-child(3) {
+  min-width: 180px;
+}
+.article-list-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.article-list-filters > .form-select {
+  width: 140px;
+  font-size: 13px;
+}
+@media (max-width: 700px) {
+  .article-form-body {
+    padding: 20px;
+  }
+  .article-list-filters {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .article-list-filters > .form-select {
+    width: 100%;
+  }
+  .article-author-pagination {
+    gap: 8px;
+  }
+  .article-chosen-authors ol {
+    padding-left: 20px;
+  }
+  .article-chosen-authors li > div {
+    margin-left: 0;
+  }
+  .article-author-picker {
+    padding: 12px;
+  }
+}
+.article-pdf-panel {
+  padding: 16px;
+  border: 1px solid #e1e8e5;
+  border-radius: 8px;
+  background: #f8faf9;
+}
+.article-pdf-link-cell {
+  min-width: 220px;
+  max-width: 300px;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}

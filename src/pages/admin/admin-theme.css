@@ -1,0 +1,136 @@
+.admin-workspace {
+  --ink: #173b60;
+  --teal: #173b60;
+  --muted: #65788b;
+  --line: #dce5ee;
+  --orange: #173b60;
+  --paper: #fff;
+  --cream: #f2f6fa;
+  --bs-primary: #173b60;
+  --bs-primary-rgb: 23, 59, 96;
+  --bs-link-color: #173b60;
+  --bs-link-hover-color: #0b2a49;
+  background: #f3f6fa;
+  color: #173b60;
+}
+.admin-workspace .admin-sidebar {
+  background: #173b60;
+  color: #e2ebf4;
+}
+.admin-workspace .admin-sidebar :is(.admin-logo, nav > a, .admin-sidebar-bottom > a) {
+  color: #fff;
+}
+.admin-workspace .admin-sidebar :is(.admin-logo small, .admin-menu-label, .admin-sidebar-bottom > span, .admin-sidebar-bottom b) {
+  color: #bfd1e2;
+}
+.admin-workspace .admin-sidebar nav {
+  scrollbar-color: #8da9c4 transparent;
+}
+.admin-workspace .admin-sidebar nav > a.active {
+  background: #ffffff19;
+  color: #fff;
+  box-shadow: inset 3px 0 #fff;
+}
+.admin-workspace .admin-sidebar nav > a:hover {
+  background: #ffffff10;
+}
+.admin-workspace .admin-sidebar-bottom > a {
+  border-color: #ffffff26;
+}
+.admin-workspace :is(.admin-main, .admin-content) {
+  background: #f3f6fa;
+}
+.admin-workspace :is(.admin-topbar, .admin-footer, .card, .admin-table-card, .admin-discipline-form, .admin-affiliation-form, .admin-author-form, .admin-journal-form) {
+  background: #fff;
+  border-color: #dce5ee;
+}
+.admin-workspace :is(h1, h2, h3, h4, .form-label, .admin-user-name, .admin-stats .card strong, .admin-data-table td > strong) {
+  color: #173b60;
+}
+.admin-workspace :is(.eyebrow, .admin-page-heading p, .admin-topbar > div:first-child > span, .admin-user-name small, .admin-table-toolbar p, .admin-table-footer, .admin-table-note, .admin-date, .admin-id, .discipline-used, .admin-empty-value, .admin-footer, .admin-form-card p, .admin-stats .card > span) {
+  color: #65788b;
+}
+.admin-workspace :is(.admin-form-icon, .admin-user-avatar, .admin-table-toolbar .badge) {
+  background: #edf3f9;
+  color: #173b60;
+  border-color: #dce5ee;
+}
+.admin-workspace :is(.admin-stats .card > svg, .admin-form-card > svg, .admin-form-card > div > span, .admin-table-toolbar h2 > svg, .admin-table-search > svg) {
+  color: #52789c;
+}
+.admin-workspace .button:not(.outline) {
+  background: #173b60;
+  border-color: #173b60;
+  color: #fff;
+}
+.admin-workspace .button:not(.outline):hover {
+  background: #0b2a49;
+  border-color: #0b2a49;
+}
+.admin-workspace :is(.button.outline, .btn-outline-primary, .admin-logout, .admin-row-actions .admin-edit-button, .admin-table-footer .icon-button) {
+  background: #fff;
+  color: #173b60;
+  border-color: #b8cbdc;
+}
+.admin-workspace :is(.button.outline, .btn-outline-primary, .admin-logout, .admin-row-actions .admin-edit-button):hover {
+  background: #edf3f9;
+  border-color: #173b60;
+  color: #173b60;
+}
+.admin-workspace .btn-primary {
+  --bs-btn-bg: #173b60;
+  --bs-btn-border-color: #173b60;
+  --bs-btn-hover-bg: #0b2a49;
+  --bs-btn-hover-border-color: #0b2a49;
+  --bs-btn-active-bg: #0b2a49;
+  --bs-btn-active-border-color: #0b2a49;
+}
+.admin-workspace :is(.form-control, .form-select, .input-group-text) {
+  border-color: #cbd9e6;
+  color: #173b60;
+  background-color: #fff;
+}
+.admin-workspace :is(.form-control, .form-select):focus {
+  border-color: #527ca6;
+  box-shadow: 0 0 0 3px #173b601a;
+}
+.admin-workspace .form-control:disabled,
+.admin-workspace .form-control[readonly] {
+  background: #f2f6fa;
+}
+.admin-workspace .form-check-input:checked {
+  background-color: #173b60;
+  border-color: #173b60;
+}
+.admin-workspace .table {
+  --bs-table-bg: #fff;
+  --bs-table-color: #334d66;
+  --bs-table-border-color: #dce5ee;
+  --bs-table-hover-bg: #f1f6fa;
+  --bs-table-striped-bg: #f7f9fc;
+}
+.admin-workspace .table thead th {
+  background: #edf3f9;
+  color: #173b60;
+  border-color: #dce5ee;
+}
+.admin-workspace :is(.admin-table-toolbar, .admin-table-footer, [class$="-form-actions"]) {
+  border-color: #dce5ee;
+  background: #fff;
+}
+.admin-workspace .admin-status.active {
+  color: #173b60;
+  background: #e8f0f8;
+}
+.admin-workspace .admin-status.inactive {
+  color: #65788b;
+  background: #f0f2f5;
+}
+.admin-workspace .admin-notice {
+  background: #edf3f9;
+  border-color: #cbd9e6;
+  color: #173b60;
+}
+.admin-workspace :is(.admin-sidebar-close, .admin-menu-toggle) {
+  color: inherit;
+}
